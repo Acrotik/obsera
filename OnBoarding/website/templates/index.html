@@ -1,0 +1,1111 @@
+{% load static %}
+{% load i18n %}
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{% trans "wb_title!" %}</title>
+    <!-- Stylesheets -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+    <!-- Add Toastr CSS in <head> -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito+Sans:wght@300;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Color Themes -->
+    <link
+      id="theme-color-file"
+      href="{% static 'css/color-themes/default-theme.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="{% static 'images/favicon.png' %}"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="{% static 'images/favicon.png' %}"
+      type="image/x-icon"
+    />
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <!--[if lt IE 9
+      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
+    ><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+  </head>
+
+  <body class="hidden-bar-wrapper">
+    <div class="page-wrapper">
+      <!-- Preloader -->
+      <div class="preloader"></div>
+      <!-- Main Header / Header Style Five -->
+      <header class="main-header header-style-five">
+        <!-- Header Top Four -->
+        <div class="header-top-four">
+          <div class="auto-container">
+            <div class="clearfix">
+              <!--Top Left-->
+              <div class="top-left clearfix" style="margin-left: 1rem">
+                <ul class="links clearfix">
+                  <li style="color: white">
+                    <span
+                      class="icon fa fa-phone"
+                      style="margin-right: 0.5rem"
+                    ></span>
+                    Montréal : 1-514-995-6921 | Québec : 1-581-397-4040
+                  </li>
+                  <li>
+                    <a href="mailto:info@obsera.ca"
+                      ><span class="icon fa fa-envelope"></span
+                      >info@obsera.ca</a
+                    >
+                  </li>
+                  <li style="color: white">
+                    <span class="icon fa fa-clock-o"></span
+                    ><?php echo _("Open Hours") ?>
+                    {% trans "business_hour" %} 09:00 am - 05:00 pm
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Top Right -->
+              <div
+                class="nav-outer clearfix"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  width: 100%;
+                "
+              >
+                <!-- Left: Hamburger -->
+                <div
+                  class="mobile-nav-toggler"
+                  style="margin-left: -1rem; margin-right: 2rem"
+                >
+                  <span class="icon flaticon-menu-2"></span>
+                </div>
+
+                <!-- Center: Social Icons -->
+                <ul
+                  class="social-icons clearfix"
+                  style="
+                    list-style: none;
+                    display: flex;
+                    gap: 10px;
+                    padding: 0;
+                    margin: 0;
+                    margin-right: 1.5rem;
+                  "
+                >
+                  <li>
+                    <a href="#"
+                      ><i
+                        class="fa-brands fa-facebook"
+                        style="color: white; margin-right: 0.5rem"
+                      ></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i
+                        class="fa-brands fa-linkedin-in"
+                        style="color: white"
+                      ></i
+                    ></a>
+                  </li>
+                </ul>
+
+                <!-- Right: Language Selectors -->
+                <ul
+                  class="social-icons clearfix"
+                  style="
+                    list-style: none;
+                    padding: 0;
+                    display: flex;
+                    gap: 10px;
+                    margin: 0;
+                  "
+                >
+                  {% get_available_languages as available_languages %} {% for lang_code, lang_name in available_languages %}
+                  <li>
+                    <a
+                      href="{% url 'set_language' lang_code %}"
+                      class="lang-btn"
+                      style="
+                        display: flex;
+                        align-items: center;
+                        padding: 8px 12px;
+                        background: #222;
+                        color: #fff;
+                        border-radius: 6px;
+                        text-decoration: none;
+                        font-weight: bold;
+                        transition: background-color 0.3s;
+                      "
+                    >
+                      <span class="flag" style="margin-right: 6px">
+                        {% if lang_code == 'en' %}
+                        <i class="fa-solid fa-flag-usa"></i>
+                        {% elif lang_code == 'fr' %}
+                        <i class="fa-brands fa-canadian-maple-leaf"></i>
+                        {% else %}
+                        <i class="fa-regular fa-flag"></i>
+                        {% endif %}
+                      </span>
+                      {{ lang_name }}
+                    </a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Header Top End -->
+
+        <div class="main-box">
+          <div class="auto-container">
+            <div class="outer-container clearfix">
+              <div class="nav-outer clearfix">
+                <!-- Main Menu -->
+                <nav class="main-menu show navbar-expand-md">
+                  <div class="navbar-header">
+                    <button
+                      class="navbar-toggler"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  </div>
+                  <div
+                    class="navbar-collapse collapse clearfix"
+                    id="navbarSupportedContent"
+                  >
+                    <ul class="navigation clearfix">
+                      <li><a href="#">{% trans "home" %}</a></li>
+                      <li><a href="#services">{% trans "services" %}</a></li>
+                      <li><a href="#about">{% trans "about" %}</a></li>
+                      <li><a href="#teams">{% trans "team" %}</a></li>
+                      <li><a href="#contact">{% trans "contact" %}</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+          <div class="menu-backdrop"></div>
+          <div class="close-btn">
+            <span class="icon flaticon-multiply"></span>
+          </div>
+
+          <nav class="menu-box">
+            <div class="nav-logo">
+              <a href="index.html"
+                >{% trans "wb_logo_hamburger" as logo_filename %}
+                <img src="{% static 'images/logo/'|add:logo_filename %}" />
+              </a>
+            </div>
+            <div class="menu-outer">
+              <!-- Menu will load here dynamically -->
+            </div>
+          </nav>
+        </div>
+        <!-- End Mobile Menu -->
+      </header>
+    </div>
+    <!-- END sidebar widget item -->
+
+    <!-- Banner Section Two -->
+    <section class="banner-section-two">
+      <div class="pattern-layer-two" style="background-image: url({%static 'images/main-slider/pattern-5.png' %});"></div>
+      <div class="main-slider-carousel owl-carousel owl-theme">
+        <div class="slide">
+          <div class="auto-container">
+            <div class="row clearfix">
+              <!-- Image Column -->
+              <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner-column">
+                  <div class="image">
+                    {% trans "wb_logo" as logo_filename %}
+                    <img src="{% static 'images/logo/'|add:logo_filename %}" />
+                  </div>
+                </div>
+              </div>
+              <!-- Content Column -->
+              <div class="content-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner-column">
+                  <div class="title">{% trans "main_head_1" %}</div>
+                  <h1>{% trans "main_head_2" %}</h1>
+                  <div class="text">{% trans "main_head_3" %}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Banner Section Two -->
+
+    <!-- Experiance Section -->
+    <section
+      class="experiance-section"
+      style="background-image: url({%static 'images/background/pattern-9.png' %})"
+      id="services"
+    >
+      <div class="auto-container">
+        <!-- Sec Title -->
+        <div class="sec-title centered">
+          <h2>{% trans "what_we_do" %}</h2>
+        </div>
+        <!-- Experiance Info Tabs -->
+        <div class="experiance-info-tabs">
+          <!-- Experiance Tabs -->
+          <div class="experiance-tabs tabs-box">
+            <!-- Tab Btns-->
+            <ul class="tab-btns tab-buttons clearfix">
+              <li data-tab="#Licensing" class="tab-btn active-btn">
+                <i class="icon fa-brands fa-microsoft"></i>{% trans "Licensing" %}
+              </li>
+              <li data-tab="#Security" class="tab-btn">
+                <i class="icon fa-solid fa-id-badge"></i>{% trans "Security" %}
+              </li>
+              <li data-tab="#Monitoring" class="tab-btn">
+                <i class="icon fa-solid fa-eye"></i>{% trans "Monitoring" %}
+              </li>
+              <li data-tab="#Backup" class="tab-btn">
+                <i class="icon fa-solid fa-hard-drive"></i>{% trans "Cloud_Backup" %}
+              </li>
+              <li data-tab="#Consulting" class="tab-btn">
+                <i class="icon fa-solid fa-building"></i>{% trans "Consulting" %}
+              </li>
+            </ul>
+            <!--Tabs Container-->
+            <div class="tabs-content">
+              <!-- Tab / Active Tab -->
+              <div class="tab active-tab" id="Licensing">
+                <div class="content">
+                  <div class="text">
+                    <h2>
+                      {% trans "Official Licensing Provider for Microsoft & Security Solutions" %}
+                    </h2>
+                    <p>
+                      {% trans "Obsera Informatique is your trusted partner for
+                      all your Microsoft licensing needs. Whether you're a small
+                      business or a large enterprise, we simplify the licensing
+                      process and ensure you're always compliant, up to date,
+                      and optimized for your budget." %}
+                    </p>
+                    <div class="services">
+                      <div class="column">
+                        <h3>{% trans "Our Licensing Services Cover:" %}</h3>
+                        <ul>
+                          <li>
+                            ✔️ {% trans "Microsoft Windows (Home, Pro, Enterprise)" %}
+                          </li>
+                          <li>
+                            ✔️ {% trans "Microsoft Office (Retail, Volume, and Microsoft 365 plans)" %}
+                          </li>
+                          <li>✔️ {% trans "Microsoft Azure" %}</li>
+                          <li>
+                            ✔️ {% trans "Microsoft 365 Business & Enterprise Suites" %}
+                          </li>
+                          <li>
+                            ✔️ {% trans "Microsoft Teams, SharePoint, OneDrive and add-ons" %}
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="column">
+                        <h3>{% trans "Why Choose Obsera:" %}</h3>
+                        <ul>
+                          <li>
+                            🎯 {% trans "License optimization based on real usage" %}
+                          </li>
+                          <li>
+                            🧾 {% trans "Simplified billing & renewal tracking" %}
+                          </li>
+                          <li>
+                            💬 {% trans "Expert advice on plan selection" %}
+                          </li>
+                          <li>
+                            🔄 {% trans "Easy migration & license transfer support" %}
+                          </li>
+                          <li>🔐 {% trans "Security and backup services" %}</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p>
+                      <strong
+                        >{% trans "One provider. Complete coverage." %}</strong
+                      >
+                    </p>
+                    <p>
+                      {% trans "Get the licenses you need — managed, monitored, and secured by Obsera." %}
+                    </p>
+                  </div>
+                  <div class="btn-box text-center">
+                    <a href="#contact" class="theme-btn btn-style-three">
+                      <span class="txt">{% trans "learn_more_btn" %}</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab -->
+              <div class="tab" id="Security">
+                <div class="content">
+                  <div class="text">
+                    <h2>{% trans "Advanced Protection with Bitdefender" %}</h2>
+                    <p>
+                      {% trans "At Obsera, your cybersecurity is our priority.
+                      That’s why we rely on the Bitdefender GravityZone suite —
+                      a world-class platform for endpoint protection, threat
+                      prevention, and managed detection & response (MDR)." %}
+                    </p>
+                    <div class="services">
+                      <div class="column">
+                        <h3>{% trans "What We Protect:" %}</h3>
+                        <ul>
+                          <li>
+                            ✔️ {% trans "Workstations and servers (Windows, macOS, Linux)" %}
+                          </li>
+                          <li>
+                            ✔️ {% trans "Microsoft 365 (Exchange Online, OneDrive, Teams)" %}
+                          </li>
+                          <li>
+                            ✔️ {% trans "Mobile devices and remote endpoints" %}
+                          </li>
+                          <li>
+                            ✔️ {% trans "File systems and user data integrity" %}
+                          </li>
+                          <li>
+                            ✔️ {% trans "Network traffic and web access" %}
+                          </li>
+                          <li>
+                            ✔️ {% trans "Vulnerability scanning and patch status" %}
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="column">
+                        <h3>{% trans "Why Bitdefender?" %}</h3>
+                        <ul>
+                          <li>🛡️ {% trans "Real-Time Threat Detection" %}</li>
+                          <li>🧠 {% trans "AI-Based Behavior Analysis" %}</li>
+                          <li>🔄 {% trans "Automatic Remediation" %}</li>
+                          <li>🌐 {% trans "Web & Email Security" %}</li>
+                          <li>📍 {% trans "Centralized Management" %}</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="key-benefits" style="margin-top: 1rem">
+                      <h3>{% trans "Key Benefits:" %}</h3>
+                      <ul>
+                        <li>
+                          {% trans "Next-gen antivirus and EDR (Endpoint Detection & Response)" %}
+                        </li>
+                        <li>
+                          {% trans "Continuous risk assessment and hardening recommendations" %}
+                        </li>
+                        <li>
+                          {% trans "Automated policy enforcement across your organization" %}
+                        </li>
+                        <li>
+                          {% trans "Detailed reports and compliance support (e.g., ISO, GDPR, HIPAA)" %}
+                        </li>
+                        <li>
+                          {% trans "Peace of mind — we monitor so you don't have to" %}
+                        </li>
+                      </ul>
+                    </div>
+                    <p>
+                      <strong
+                        >{% trans "Cyber threats evolve. So do we." %}</strong
+                      >
+                    </p>
+                    <p>
+                      {% trans "Let Obsera and Bitdefender be your first and last line of defense." %}
+                    </p>
+                  </div>
+                  <div class="btn-box text-center">
+                    <a href="#contact" class="theme-btn btn-style-three">
+                      <span class="txt">{% trans "learn_more_btn" %}</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Tab -->
+              <!-- Tab / Active Tab -->
+              <div class="tab" id="Monitoring">
+                <div class="content">
+                  <div class="text">
+                    <h2>
+                      {% trans "Proactive Infrastructure Monitoring with Level.io" %}
+                    </h2>
+                    <p>
+                      {% trans "At Obsera, we don’t just wait for problems — we anticipate them. Through our integration with Level.io, we deliver real-time monitoring of your systems, servers, endpoints, and cloud services." %}
+                    </p>
+
+                    <div class="services">
+                      <div class="column">
+                        <h3>{% trans "What We Monitor:" %}</h3>
+                        <ul>
+                          <li>
+                            ✔️ {% trans "Workstations & Servers (Windows, macOS, Linux)" %}
+                          </li>
+                          <li>✔️ {% trans "Network Devices & Firewalls" %}</li>
+                          <li>✔️ {% trans "Disk space, CPU, RAM, uptime" %}</li>
+                          <li>
+                            ✔️ {% trans "Service health (AV, backups, updates, etc.)" %}
+                          </li>
+                          <li>
+                            ✔️ {% trans "Software and hardware changes" %}
+                          </li>
+                          <li>
+                            ✔️ {% trans "Security alerts and patch compliance" %}
+                          </li>
+                          <li>
+                            ✔️ {% trans "Cloud resources (Microsoft 365, Azure, etc.)" %}
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="column">
+                        <h3>{% trans "Why It Matters:" %}</h3>
+                        <ul>
+                          <li>
+                            🕒 {% trans "We identify critical issues before they impact your business." %}
+                          </li>
+                          <li>
+                            🔐 {% trans "Get alerted to suspicious activity or vulnerabilities." %}
+                          </li>
+                          <li>
+                            📊 {% trans "Better decisions with detailed performance metrics and reports." %}
+                          </li>
+                          <li>
+                            📞 {% trans "We respond in real-time, so you don’t have to." %}
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="key-benefits">
+                      <h3>{% trans "Benefits:" %}</h3>
+                      <ul>
+                        <li>
+                          {% trans "Peace of mind with constant oversight" %}
+                        </li>
+                        <li>
+                          {% trans "Reduced downtime and faster incident response" %}
+                        </li>
+                        <li>
+                          {% trans "Compliance tracking and asset inventory" %}
+                        </li>
+                        <li>
+                          {% trans "Customized thresholds tailored to your business" %}
+                        </li>
+                      </ul>
+                    </div>
+                    <p>
+                      <strong
+                        >{% trans "Monitoring isn’t optional — it’s essential." %}</strong
+                      >
+                    </p>
+                    <p>
+                      {% trans "Let us keep watch, so you can focus on what matters most." %}
+                    </p>
+                  </div>
+                  <div class="btn-box text-center">
+                    <a href="#contact" class="theme-btn btn-style-three">
+                      <span class="txt"> {% trans "learn_more_btn" %}</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Tab -->
+              <!-- Backup Section -->
+              <div class="tab" id="Backup">
+                <div class="content">
+                  <div class="text">
+                    <h2>
+                      {% trans "Reliable, Automated Backup Solutions — Because Data Loss Isn’t an Option" %}
+                    </h2>
+                    <p>
+                      {% trans "At Obsera, we treat your data like mission-critical assets — because they are. That’s why we offer a complete range of automated, secure backup solutions tailored to your infrastructure and compliance needs." %}
+                    </p>
+
+                    <div class="services">
+                      <!-- Left Column -->
+                      <div class="column">
+                        <h3>{% trans "Our Solutions:" %}</h3>
+                        <ul>
+                          <li>
+                            {% trans "✔️ LT Backup — Local and hybrid backups for servers, workstations, and NAS" %}
+                          </li>
+                          <li>
+                            {% trans "✔️ ProBackup 365 — Full protection of your Microsoft 365 data (Outlook, OneDrive, Teams, SharePoint)" %}
+                          </li>
+                          <li>
+                            {% trans "✔️ Acronis Backup — Cloud-based backups with fast recovery and anti-ransomware defense" %}
+                          </li>
+                          <li>
+                            {% trans "✔️ Custom setups — Tailored for physical servers, VMs, databases, or hybrid infrastructures" %}
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Right Column -->
+                      <div class="column">
+                        <h3>{% trans "Key Features:" %}</h3>
+                        <ul>
+                          <li>{% trans "✔️ Scheduled, automated backups" %}</li>
+                          <li>
+                            {% trans "✔️ Flexible retention (7, 30, or custom days)" %}
+                          </li>
+                          <li>{% trans "✔️ End-to-end encryption" %}</li>
+                          <li>
+                            {% trans "✔️ Local, hybrid, or full cloud storage" %}
+                          </li>
+                          <li>
+                            {% trans "✔️ Detailed reporting and failure alerts" %}
+                          </li>
+                          <li>
+                            {% trans "✔️ Fast restore of files, emails, or entire systems" %}
+                          </li>
+                        </ul>
+                        <h3>{% trans "Why Obsera?" %}</h3>
+                        <ul>
+                          <li>
+                            {% trans "✔️ Proactive monitoring of your backups" %}
+                          </li>
+                          <li>{% trans "✔️ Business continuity planning" %}</li>
+                          <li>
+                            {% trans "✔️ Compliance-ready (GDPR, ISO, HIPAA, etc.)" %}
+                          </li>
+                          <li>
+                            {% trans "✔️ Fast support when disaster strikes" %}
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p>
+                      <strong
+                        >{% trans "It’s not a matter of if — but when." %}</strong
+                      >
+                    </p>
+                    <p>
+                      {% trans "Be ready with Obsera. Your data will always be safe." %}
+                    </p>
+                  </div>
+                  <div class="btn-box text-center">
+                    <a href="#contact" class="theme-btn btn-style-three">
+                      <span class="txt">{% trans "learn_more_btn" %}</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Tab -->
+              <!-- Consulting Section -->
+              <div class="tab" id="Consulting">
+                <div class="content">
+                  <h4>
+                    {% trans "Strategic IT Guidance for Smart Business Decisions" %}
+                  </h4>
+                  <div class="text">
+                    <h2>
+                      {% trans "Consulting — Strategic IT Guidance for Smart Business Decisions" %}
+                    </h2>
+                    <p>
+                      {% trans "At Obsera, we help businesses make informed, future-ready decisions about their IT environment. Whether you’re migrating to Microsoft 365, transitioning to Azure, improving your cybersecurity posture, or overhauling your infrastructure, our consulting services are designed to maximize impact, minimize risk, and drive growth." %}
+                    </p>
+                    <div class="services">
+                      <!-- Left Column -->
+                      <div class="column">
+                        <h3>{% trans "Our Consulting Services Include:" %}</h3>
+                        <ul>
+                          <li>
+                            {% trans "✔️ Microsoft 365 and Azure migration projects" %}
+                          </li>
+                          <li>
+                            {% trans "✔️ Security posture assessments and hardening plans" %}
+                          </li>
+                          <li>
+                            {% trans "✔️ License and cloud cost optimization" %}
+                          </li>
+                          <li>
+                            {% trans "✔️ Infrastructure redesign and
+                            virtualization" %}
+                          </li>
+                          <li>
+                            {% trans "✔️ Business continuity and disaster recovery planning" %}
+                          </li>
+                          <li>
+                            {% trans "✔️ Backup & EDR solution selection and deployment" %}
+                          </li>
+                          <li>
+                            {% trans "✔️ CISO advisory, ISO/GDPR compliance support" %}
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Right Column -->
+                      <div class="column">
+                        <h3>{% trans "Why Choose Obsera:" %}</h3>
+                        <ul>
+                          <li>
+                            {% trans "🎯 Results-driven, actionable recommendations" %}
+                          </li>
+                          <li>
+                            {% trans "🧩 Customized strategies that fit your needs and budget" %}
+                          </li>
+                          <li>
+                            {% trans "🤝 Human, technical, and business-centric guidance" %}
+                          </li>
+                          <li>
+                            {% trans "📈 Long-term vision to support sustainable growth" %}
+                          </li>
+                          <li>
+                            {% trans "💼 Experience with SMBs, legal firms, and regulated sectors" %}
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p>
+                      <strong
+                        >{% trans "IT consulting isn’t just about advice." %}</strong
+                      >
+                    </p>
+                    <p>
+                      {% trans "It’s about clarity, confidence, and results." %}
+                    </p>
+                    <p>
+                      <strong
+                        >{% trans "Obsera Informatique — Your trusted partner in digital transformation." %}</strong
+                      >
+                    </p>
+                  </div>
+                  <div class="btn-box text-center">
+                    <a href="#contact" class="theme-btn btn-style-three">
+                      <span class="txt"> {% trans "learn_more_btn" %}</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Experiance Section -->
+    <!-- About Section Two -->
+    <section
+      class="about-section-two"
+      style="background-color: #003366; padding: 80px 0"
+      id="about"
+    >
+      <div class="auto-container">
+        <div class="sec-title centered">
+          <div class="title">
+            <h2 style="color: #f1f1f1; font-weight: bold">
+              {% trans "experience_execution_excellence" %}
+            </h2>
+          </div>
+        </div>
+        <div
+          class="row clearfix"
+          style="display: flex; gap: 30px; align-items: stretch"
+        >
+          <!-- Trusted IT Partner Column -->
+          <div
+            class="trusted-column col-lg-6 col-md-12 col-sm-12"
+            style="
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              background-color: #f4f9fd;
+              border-radius: 8px;
+              padding: 40px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            "
+          >
+            <h3 style="font-size: 26px; font-weight: bold; margin-bottom: 20px">
+              {% trans "trusted" %}
+            </h3>
+            <p style="font-size: 18px; line-height: 1.6">
+              {% trans "trusted_text" %}
+            </p>
+          </div>
+          <!-- Comprehensive IT Consulting Column -->
+          <div
+            class="comprehensive-column col-lg-6 col-md-12 col-sm-12"
+            style="
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              background-color: #f4f9fd;
+              border-radius: 8px;
+              padding: 40px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            "
+          >
+            <h3 style="font-size: 26px; font-weight: bold; margin-bottom: 20px">
+              {% trans "trusted_2" %}
+            </h3>
+            <p style="font-size: 18px; line-height: 1.6">
+              {% trans "trusted_text_2" %}
+            </p>
+            <p style="font-size: 18px; line-height: 1.6">
+              {% trans "trusted_text_3" %}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section Two -->
+    <!-- Team Section Two -->
+    <section
+      class="team-section-two"
+      style="
+        background-image: url({%static 'images/background/2.jpg' %});
+        background-size: cover;
+      "
+      id="teams"
+    >
+      <div class="auto-container">
+        <!-- Sec Title -->
+        <div class="sec-title">
+          <div class="clearfix">
+            <div class="pull-left">
+              <div class="title">{% trans "dedicated_team" %}</div>
+              <h2>{% trans "dedicated_team_1" %}</h2>
+            </div>
+            <div class="pull-right">
+              <div class="text">{% trans "dedicated_team_2" %}</div>
+            </div>
+          </div>
+        </div>
+        <div class="row clearfix">
+          <!-- Team Block -->
+          <div class="team-block-two col-lg-3 col-md-6 col-sm-12 d-flex">
+            <div class="inner-box d-flex flex-column w-100">
+              <div class="image" style="background-color: transparent">
+                <img
+                  src="{% static 'images/resource/1234.png' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="lower-box d-flex flex-column flex-grow-1">
+                <!-- Social Box -->
+                <ul class="social-box" style="color: white">
+                  <li><i class="fa-brands fa-facebook"></i></li>
+                  <li><i class="fa-brands fa-linkedin-in"></i></li>
+                  <li>
+                    <a href="mailto:jp@obsera.ca"
+                      ><i class="fa fa-envelope"></i
+                    ></a>
+                  </li>
+                </ul>
+                <div class="content flex-grow-1">
+                  <h5><a href="team-detail.html">Jean-Philippe Tremblay</a></h5>
+                  <div class="designation">{% trans "title_jp" %}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Team Block -->
+          <div class="team-block-two col-lg-3 col-md-6 col-sm-12 d-flex">
+            <div class="inner-box d-flex flex-column w-100">
+              <div class="image" style="background-color: transparent">
+                <img
+                  src="{% static 'images/resource/123.png' %}"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div
+                class="lower-box d-flex flex-column flex-grow-1"
+                style="margin-bottom: 1.5rem"
+              >
+                <!-- Social Box -->
+                <ul class="social-box" style="color: white">
+                  <li><i class="fa-brands fa-facebook"></i></li>
+                  <li><i class="fa-brands fa-linkedin-in"></i></li>
+                  <li>
+                    <a href="mailto:nic@obsera.ca"
+                      ><i class="fa fa-envelope"></i
+                    ></a>
+                  </li>
+                </ul>
+                <div class="content flex-grow-1">
+                  <h5>
+                    <a href="team-detail.html">Nicolas <br />Therrien</a>
+                  </h5>
+                  <div class="designation">{% trans "title_nic" %}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Team Section Two -->
+    <!-- Appointment Section -->
+    <section
+      id="contact"
+      class="appointment-section"
+      style="background: #003366; padding: 80px 0; position: relative"
+    >
+      <!-- Sec Title -->
+      <div class="sec-title text-center light">
+        <div
+          class="title"
+          style="color: #fff; font-weight: bold; font-size: 24px"
+        >
+          {% trans "contact_us" %}
+        </div>
+        <h2 style="color: #fff">{% trans "contact_desc" %}</h2>
+      </div>
+      <div class="">
+        {% if messages %}
+        <ul>
+          {% for message in messages %}
+          <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        <div class="row clearfix justify-content-center">
+          <!-- Form Column -->
+          <div class="form-column col-lg-5 col-md-8 col-sm-10">
+            <div
+              class="inner-column"
+              style="
+                background: rgba(255, 255, 255, 0.8);
+                padding: 40px;
+                border-radius: 10px;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+              "
+            >
+              <h4
+                style="
+                  color: #333;
+                  font-size: 22px;
+                  margin-bottom: 30px;
+                  text-align: center;
+                "
+              >
+                {% trans "contact_head" %}
+              </h4>
+              <div class="appointment-form">
+                <form method="post" novalidate>
+                  {% csrf_token %}
+                  <div class="row clearfix">
+                    <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                      {{ form.username }} {{ form.username.errors }}
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                      <div style="display: flex; align-items: center; gap: 10px">
+                        <!-- Label -->
+                        <label for="id_nb_employee" style="font-weight: bold; margin-bottom: 0">{{ form.nb_employee.label }}</label>
+
+                        <!-- Select Box -->
+                        {{ form.nb_employee }}
+                      </div>
+                      {{ form.nb_employee.errors }}
+                    </div>
+
+                    <div class="col-lg-12 col-md-6 col-sm-12 form-group">
+                      {{ form.email }} {{ form.email.errors }}
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                      {{ form.phone }} {{ form.phone.errors }}
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                      {{ form.company }} {{ form.company.errors }}
+                    </div>
+
+                    <!-- Services Section -->
+                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                      <label
+                        style="
+                          font-weight: bold;
+                          display: block;
+                          margin-bottom: 10px;
+                        "
+                        >{% trans "Services intéressés" %}</label
+                      >
+                      <div
+                        class="checkbox-section"
+                        style="
+                          background: #ffffff;
+                          padding: 20px;
+                          border-radius: 8px;
+                        "
+                      >
+                        <div class="row">
+                          {% for value, label in form.services.field.choices %}
+                          <div
+                            class="col-md-4 col-sm-6"
+                            style="margin-bottom: 20px"
+                          >
+                            <!-- Checkbox container -->
+                            <div
+                              class="checkbox-container"
+                              style="display: flex; flex-direction: column"
+                            >
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 8px;
+                                  font-weight: normal;
+                                  margin: 0;
+                                "
+                              >
+                                <input
+                                  type="checkbox"
+                                  name="services"
+                                  value="{{ value }}"
+                                  id="id_services_{{ value }}"
+                                  style="margin-right: 10px"
+                                />
+                                {{ label }}
+                              </label>
+                            </div>
+                          </div>
+                          {% endfor %}
+                        </div>
+                      </div>
+                      {{ form.services.errors }}
+                    </div>
+
+                    <!-- Separate container for the text inputs -->
+                    <div
+                      id="service-textbox-container"
+                      class="col-lg-12 col-md-12 col-sm-12 form-group"
+                    >
+                      <!-- Text inputs will be dynamically added here -->
+                    </div>
+
+                    <!-- Message Form -->
+                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                      {{ form.message }} {{ form.message.errors }}
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div
+                      class="col-lg-12 col-md-12 col-sm-12 form-group text-center"
+                    >
+                      <button
+                        class="theme-btn btn-style-three"
+                        type="submit"
+                        style="
+                          background-color: #006699;
+                          color: #fff;
+                          border-radius: 8px;
+                          padding: 15px 30px;
+                          width: 100%;
+                          max-width: 200px;
+                        "
+                      >
+                        <span class="txt">{% trans "send_btn" %}</span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--End pagewrapper-->
+    <!--Scroll to top-->
+
+    <div class="scroll-to-top scroll-to-target" data-target="html">
+      <span class="fa fa-arrow-up"></span>
+    </div>
+
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+    <script src="{% static 'js/appear.js' %}"></script>
+    <script src="{% static 'js/parallax.min.js' %}"></script>
+    <script src="{% static 'js/tilt.jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery.paroller.min.js' %}"></script>
+    <script src="{% static 'js/owl.js' %}"></script>
+    <script src="{% static 'js/wow.js' %}"></script>
+    <script src="{% static 'js/nav-tool.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'js/color-settings.js' %}"></script>
+
+    <script>
+      $(document).ready(function() {
+      	$('input[type="checkbox"]').change(function() {
+      		var serviceId = $(this).val(); // Get the value of the checkbox
+      		var serviceLabel = $(this).closest('.checkbox-container').find('label').text().trim();
+
+      		// Get the translated placeholder text from the label's data-placeholder attribute
+      		var placeholderText = "{% trans "details_consulting" %}";
+
+      		var textboxHTML = `
+      			<div class="col-6" id="textbox-container-${serviceId}" style="margin-top: 10px;">
+      				<div class="form-group">
+      					<!-- Label and Input in same col-6 -->
+      					<label for="details_${serviceId}" style="font-weight: bold;">${serviceLabel}: </label>
+      					<input type="text" name="details_${serviceId}" id="details_${serviceId}" placeholder="${placeholderText}" style="width: 100%; padding: 10px; border-radius: 8px; margin-top: 8px;">
+      				</div>
+      			</div>
+      		`;
+
+      		// If checkbox is checked, add the textbox input
+      		if ($(this).prop('checked')) {
+      			$('#service-textbox-container').show();
+
+      			// Create a row if one doesn't exist
+      			if ($('#service-textbox-container .row').length === 0) {
+      				$('#service-textbox-container').append('<div class="row"></div>');
+      			}
+
+      			// Append the textbox to the row
+      			$('#service-textbox-container .row').append(textboxHTML);
+      		} else {
+      			// Remove the corresponding textbox
+      			$('#textbox-container-' + serviceId).remove();
+
+      			// Hide the container if no checkboxes are selected
+      			if ($('#service-textbox-container').children().length === 0) {
+      				$('#service-textbox-container').hide();
+      			}
+      		}
+      	});
+      });
+    </script>
+  </body>
+</html>

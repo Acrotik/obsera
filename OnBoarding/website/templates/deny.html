@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+</head>
+<body>
+    <h1>Error</h1>
+    <p>There was an issue sending your message. Please try again later.</p>
+
+    <!-- Toastr message for error -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            toastr.error("Failed to send your message. Please try again later.");
+            setTimeout(function() {
+                window.location.href = "/";  // Redirect after 10 seconds
+            }, 5000);  // 10 seconds delay
+        });
+    </script>
+</body>
+</html>
