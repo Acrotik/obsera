@@ -17,9 +17,7 @@ msgstr "Security"
 msgid "Monitoring"
 msgstr "Monitoring"
 
-#: .\website\forms.py:8
-#, fuzzy
-#| msgid "Cloud_Backup"
+
 msgid "Cloud Backup"
 msgstr "Cloud Backup"
 
