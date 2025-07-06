@@ -17,7 +17,6 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "dashboard",
     "modeltranslation",
     "website",
 ]
@@ -55,8 +54,10 @@ TEMPLATES = [
 ]
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    BASE_DIR / 'static',
+    BASE_DIR / 'website/static',
 ]
+
 
 WSGI_APPLICATION = "onboarding.wsgi.application"
 
@@ -82,7 +83,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-AUTH_USER_MODEL = "dashboard.CustomUser"
 
 LOGIN_REDIRECT_URL = "/"
 LOGIN_URL = "/login/"
