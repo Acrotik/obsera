@@ -58,8 +58,9 @@ TEMPLATES = [
 STATIC_ROOT = '/root/obsera/OnBoarding/staticfiles'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
-    BASE_DIR / 'website/static',
+    BASE_DIR / "website/static",
+    # or
+    "/root/obsera/OnBoarding/website/static",
 ]
 
 

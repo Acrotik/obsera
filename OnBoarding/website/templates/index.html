@@ -142,21 +142,19 @@
                     margin: 0;
                   "
                 >
-{% get_available_languages as available_languages %}
-{% for lang_code, lang_name in available_languages %}
-  <li>
-    <form action="{% url 'set_language' %}" method="post" style="display:inline;">
-      {% csrf_token %}
-      <input type="hidden" name="language" value="{{ lang_code }}">
-      <input type="hidden" name="next" value="{{ request.get_full_path }}">
-      <button type="submit" class="lang-btn" style="background:#222; color:#fff; border:none; padding:8px 12px; border-radius:6px; font-weight:bold; cursor:pointer;">
-        {{ lang_name }}
-      </button>
-    </form>
-  </li>
-{% endfor %}
-
-
+                  {% get_available_languages as available_languages %}
+                  {% for lang_code, lang_name in available_languages %}
+                    <li>
+                      <form action="{% url 'set_language' %}" method="post" style="display:inline;">
+                        {% csrf_token %}
+                        <input type="hidden" name="language" value="{{ lang_code }}">
+                        <input type="hidden" name="next" value="{{ request.get_full_path }}">
+                        <button type="submit" class="lang-btn" style="background:#222; color:#fff; border:none; padding:8px 12px; border-radius:6px; font-weight:bold; cursor:pointer;">
+                          {{ lang_name }}
+                        </button>
+                      </form>
+                    </li>
+                  {% endfor %}
                 </ul>
               </div>
             </div>
