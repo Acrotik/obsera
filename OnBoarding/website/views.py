@@ -1,14 +1,8 @@
-from django.shortcuts import render, redirect
 from django.core.mail import send_mail
-from django.conf import settings
+from django.shortcuts import render, redirect
 from django.contrib import messages
+from django.conf import settings
 from .forms import ContactForm
-
-from django.core.mail import send_mail
-from django.shortcuts import render, redirect
-from django.contrib import messages
-from django.conf import settings
-from .forms import ContactForm  # Assuming the form is in forms.py
 
 
 def index(request):
