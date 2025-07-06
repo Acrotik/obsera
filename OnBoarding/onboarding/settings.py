@@ -55,8 +55,10 @@ TEMPLATES = [
 ]
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    BASE_DIR / 'static',
+    BASE_DIR / 'website/static',
 ]
+
 
 WSGI_APPLICATION = "onboarding.wsgi.application"
 
