@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.conf import settings
 from .forms import ContactForm
+from django.utils import translation
 
 
 def index(request):
@@ -64,6 +65,12 @@ def index(request):
         form = ContactForm()
 
     return render(request, 'index.html', {'form': form})
+
+
+def set_language(request, lang_code):
+    translation.activate(lang_code)
+    request.session[settings.LANGUAGE_COOKIE_NAME] = lang_code
+    return redirect(request.GET.get('next', '/'))
 
 
 def success(request):

@@ -1,0 +1,675 @@
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-06 03:09-0400\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\website\forms.py:5 .\website\templates\index.html:273
+msgid "Licensing"
+msgstr "Licensing"
+
+#: .\website\forms.py:6 .\website\templates\index.html:276
+msgid "Security"
+msgstr "Security"
+
+#: .\website\forms.py:7 .\website\templates\index.html:279
+msgid "Monitoring"
+msgstr "Monitoring"
+
+#: .\website\forms.py:8
+msgid "Cloud Backup"
+msgstr "Cloud Backup"
+
+#: .\website\forms.py:9 .\website\templates\index.html:285
+msgid "Consulting"
+msgstr "Consulting"
+
+#: .\website\forms.py:17
+msgid "Name"
+msgstr "Name"
+
+#: .\website\forms.py:24
+msgid "Email"
+msgstr "Email"
+
+#: .\website\forms.py:32
+msgid "Phone"
+msgstr "Phone no"
+
+#: .\website\forms.py:40
+msgid "Company"
+msgstr "Company"
+
+#: .\website\forms.py:48
+msgid "Message"
+msgstr "Message"
+
+#: .\website\forms.py:59
+msgid "Services Interested In"
+msgstr "Services auxquels vous êtes intéressé"
+
+#: .\website\forms.py:70
+msgid "Nombre d'employés"
+msgstr ""
+
+#: .\website\models.py:6
+#, fuzzy
+#| msgid "title_jp"
+msgid "Title"
+msgstr "Project Manager & <br> System Administrator"
+
+#: .\website\models.py:7
+msgid "Description"
+msgstr ""
+
+#: .\website\templates\index.html:6
+msgid "wb_title!"
+msgstr "Obsera | Licensing & Consulting!"
+
+#: .\website\templates\index.html:81
+msgid "business_hour"
+msgstr "Open Hours"
+
+#: .\website\templates\index.html:187
+msgid "home"
+msgstr "Home"
+
+#: .\website\templates\index.html:188
+msgid "services"
+msgstr "Services"
+
+#: .\website\templates\index.html:189
+msgid "about"
+msgstr "About"
+
+#: .\website\templates\index.html:190
+msgid "team"
+msgstr "Our Team"
+
+#: .\website\templates\index.html:191
+msgid "contact"
+msgstr "Contact"
+
+#: .\website\templates\index.html:210
+msgid "wb_logo_hamburger"
+msgstr "Logo-complet-V2_EN_Bleu_2_BK.png"
+
+#: .\website\templates\index.html:235
+msgid "wb_logo"
+msgstr "Logo-complet-V2_EN_Blanc_2.png"
+
+#: .\website\templates\index.html:243
+msgid "main_head_1"
+msgstr "20 years of proven experience in IT consulting"
+
+#: .\website\templates\index.html:244
+msgid "main_head_2"
+msgstr "We protect what keeps you running"
+
+#: .\website\templates\index.html:245
+msgid "main_head_3"
+msgstr ""
+"Expert Microsoft licensing, IT monitoring & consulting to ensure compliance, "
+"performance & cost efficiency."
+
+#: .\website\templates\index.html:264
+msgid "what_we_do"
+msgstr "What We Actually Do"
+
+#: .\website\templates\index.html:282
+msgid "Cloud_Backup"
+msgstr "Cloud Backup"
+
+#: .\website\templates\index.html:295
+msgid "Official Licensing Provider for Microsoft & Security Solutions"
+msgstr "Official Licensing Provider for Microsoft & Security Solutions"
+
+#: .\website\templates\index.html:298
+msgid ""
+"Obsera Informatique is your trusted partner for all your Microsoft licensing "
+"needs. Whether you're a small business or a large enterprise, we simplify "
+"the licensing process and ensure you're always compliant, up to date, and "
+"optimized for your budget."
+msgstr ""
+"Obsera Informatique is your trusted partner for all your Microsoft licensing "
+"needs. Whether you're a small business or a large enterprise, we simplify "
+"the licensing process and ensure you're always compliant, up to date, and "
+"optimized for your budget."
+
+#: .\website\templates\index.html:302
+msgid "Our Licensing Services Cover:"
+msgstr "Our Licensing Services Cover:"
+
+#: .\website\templates\index.html:305
+msgid "Microsoft Windows (Home, Pro, Enterprise)"
+msgstr "Microsoft Windows (Home, Pro, Enterprise)"
+
+#: .\website\templates\index.html:308
+msgid "Microsoft Office (Retail, Volume, and Microsoft 365 plans)"
+msgstr "Microsoft Office (Retail, Volume, and Microsoft 365 plans)"
+
+#: .\website\templates\index.html:310
+msgid "Microsoft Azure"
+msgstr "Microsoft Azure"
+
+#: .\website\templates\index.html:312
+msgid "Microsoft 365 Business & Enterprise Suites"
+msgstr "Microsoft 365 Business & Enterprise Suites"
+
+#: .\website\templates\index.html:315
+msgid "Microsoft Teams, SharePoint, OneDrive and add-ons"
+msgstr "Microsoft Teams, SharePoint, OneDrive and add-ons"
+
+#: .\website\templates\index.html:320 .\website\templates\index.html:644
+msgid "Why Choose Obsera:"
+msgstr "Why Choose Obsera:"
+
+#: .\website\templates\index.html:323
+msgid "License optimization based on real usage"
+msgstr "License optimization based on real usage"
+
+#: .\website\templates\index.html:326
+msgid "Simplified billing & renewal tracking"
+msgstr "Simplified billing & renewal tracking"
+
+#: .\website\templates\index.html:329
+msgid "Expert advice on plan selection"
+msgstr "Expert advice on plan selection"
+
+#: .\website\templates\index.html:332
+msgid "Easy migration & license transfer support"
+msgstr "Easy migration & license transfer support"
+
+#: .\website\templates\index.html:334
+msgid "Security and backup services"
+msgstr "Security and backup services"
+
+#: .\website\templates\index.html:340
+msgid "One provider. Complete coverage."
+msgstr "One provider. Complete coverage."
+
+#: .\website\templates\index.html:344
+msgid "Get the licenses you need — managed, monitored, and secured by Obsera."
+msgstr "Get the licenses you need — managed, monitored, and secured by Obsera."
+
+#: .\website\templates\index.html:349 .\website\templates\index.html:427
+#: .\website\templates\index.html:513 .\website\templates\index.html:594
+#: .\website\templates\index.html:680
+msgid "learn_more_btn"
+msgstr "Learn More"
+
+#: .\website\templates\index.html:359
+msgid "Advanced Protection with Bitdefender"
+msgstr "Advanced Protection with Bitdefender"
+
+#: .\website\templates\index.html:361
+msgid ""
+"At Obsera, your cybersecurity is our priority. That’s why we rely on the "
+"Bitdefender GravityZone suite — a world-class platform for endpoint "
+"protection, threat prevention, and managed detection & response (MDR)."
+msgstr ""
+"At Obsera, your cybersecurity is our priority. That’s why we rely on the "
+"Bitdefender GravityZone suite — a world-class platform for endpoint "
+"protection, threat prevention, and managed detection & response (MDR)."
+
+#: .\website\templates\index.html:365
+msgid "What We Protect:"
+msgstr "What We Protect:"
+
+#: .\website\templates\index.html:368
+msgid "Workstations and servers (Windows, macOS, Linux)"
+msgstr "Workstations and servers (Windows, macOS, Linux)"
+
+#: .\website\templates\index.html:371
+msgid "Microsoft 365 (Exchange Online, OneDrive, Teams)"
+msgstr "Microsoft 365 (Exchange Online, OneDrive, Teams)"
+
+#: .\website\templates\index.html:374
+msgid "Mobile devices and remote endpoints"
+msgstr "Mobile devices and remote endpoints"
+
+#: .\website\templates\index.html:377
+msgid "File systems and user data integrity"
+msgstr "File systems and user data integrity"
+
+#: .\website\templates\index.html:380
+msgid "Network traffic and web access"
+msgstr "Network traffic and web access"
+
+#: .\website\templates\index.html:383
+msgid "Vulnerability scanning and patch status"
+msgstr "Vulnerability scanning and patch status"
+
+#: .\website\templates\index.html:388
+msgid "Why Bitdefender?"
+msgstr "Why Bitdefender?"
+
+#: .\website\templates\index.html:390
+msgid "Real-Time Threat Detection"
+msgstr "Real-Time Threat Detection"
+
+#: .\website\templates\index.html:391
+msgid "AI-Based Behavior Analysis"
+msgstr "AI-Based Behavior Analysis"
+
+#: .\website\templates\index.html:392
+msgid "Automatic Remediation"
+msgstr "Automatic Remediation"
+
+#: .\website\templates\index.html:393
+msgid "Web & Email Security"
+msgstr "Web & Email Security"
+
+#: .\website\templates\index.html:394
+msgid "Centralized Management"
+msgstr "Centralized Management"
+
+#: .\website\templates\index.html:399
+msgid "Key Benefits:"
+msgstr "Key Benefits:"
+
+#: .\website\templates\index.html:402
+msgid "Next-gen antivirus and EDR (Endpoint Detection & Response)"
+msgstr "Next-gen antivirus and EDR (Endpoint Detection & Response)"
+
+#: .\website\templates\index.html:405
+msgid "Continuous risk assessment and hardening recommendations"
+msgstr "Continuous risk assessment and hardening recommendations"
+
+#: .\website\templates\index.html:408
+msgid "Automated policy enforcement across your organization"
+msgstr "Automated policy enforcement across your organization"
+
+#: .\website\templates\index.html:411
+msgid "Detailed reports and compliance support (e.g., ISO, GDPR, HIPAA)"
+msgstr "Detailed reports and compliance support (e.g., ISO, GDPR, HIPAA)"
+
+#: .\website\templates\index.html:414
+msgid "Peace of mind — we monitor so you don't have to"
+msgstr "Peace of mind — we monitor so you don't have to"
+
+#: .\website\templates\index.html:419
+msgid "Cyber threats evolve. So do we."
+msgstr "Cyber threats evolve. So do we."
+
+#: .\website\templates\index.html:422
+msgid "Let Obsera and Bitdefender be your first and last line of defense."
+msgstr "Let Obsera and Bitdefender be your first and last line of defense."
+
+#: .\website\templates\index.html:438
+msgid "Proactive Infrastructure Monitoring with Level.io"
+msgstr "Proactive Infrastructure Monitoring with Level.io"
+
+#: .\website\templates\index.html:441
+msgid ""
+"At Obsera, we don’t just wait for problems — we anticipate them. Through our "
+"integration with Level.io, we deliver real-time monitoring of your systems, "
+"servers, endpoints, and cloud services."
+msgstr ""
+"At Obsera, we don’t just wait for problems — we anticipate them. Through our "
+"integration with Level.io, we deliver real-time monitoring of your systems, "
+"servers, endpoints, and cloud services."
+
+#: .\website\templates\index.html:446
+msgid "What We Monitor:"
+msgstr "What We Monitor:"
+
+#: .\website\templates\index.html:449
+msgid "Workstations & Servers (Windows, macOS, Linux)"
+msgstr "Workstations & Servers (Windows, macOS, Linux)"
+
+#: .\website\templates\index.html:451
+msgid "Network Devices & Firewalls"
+msgstr "Network Devices & Firewalls"
+
+#: .\website\templates\index.html:452
+msgid "Disk space, CPU, RAM, uptime"
+msgstr "Disk space, CPU, RAM, uptime"
+
+#: .\website\templates\index.html:454
+msgid "Service health (AV, backups, updates, etc.)"
+msgstr "Service health (AV, backups, updates, etc.)"
+
+#: .\website\templates\index.html:457
+msgid "Software and hardware changes"
+msgstr "Software and hardware changes"
+
+#: .\website\templates\index.html:460
+msgid "Security alerts and patch compliance"
+msgstr "Security alerts and patch compliance"
+
+#: .\website\templates\index.html:463
+msgid "Cloud resources (Microsoft 365, Azure, etc.)"
+msgstr "Cloud resources (Microsoft 365, Azure, etc.)"
+
+#: .\website\templates\index.html:468
+msgid "Why It Matters:"
+msgstr "Why It Matters:"
+
+#: .\website\templates\index.html:471
+msgid "We identify critical issues before they impact your business."
+msgstr "We identify critical issues before they impact your business."
+
+#: .\website\templates\index.html:474
+msgid "Get alerted to suspicious activity or vulnerabilities."
+msgstr "Get alerted to suspicious activity or vulnerabilities."
+
+#: .\website\templates\index.html:477
+msgid "Better decisions with detailed performance metrics and reports."
+msgstr "Better decisions with detailed performance metrics and reports."
+
+#: .\website\templates\index.html:480
+msgid "We respond in real-time, so you don’t have to."
+msgstr "We respond in real-time, so you don’t have to."
+
+#: .\website\templates\index.html:486
+msgid "Benefits:"
+msgstr "Benefits:"
+
+#: .\website\templates\index.html:489
+msgid "Peace of mind with constant oversight"
+msgstr "Peace of mind with constant oversight"
+
+#: .\website\templates\index.html:492
+msgid "Reduced downtime and faster incident response"
+msgstr "Reduced downtime and faster incident response"
+
+#: .\website\templates\index.html:495
+msgid "Compliance tracking and asset inventory"
+msgstr "Compliance tracking and asset inventory"
+
+#: .\website\templates\index.html:498
+msgid "Customized thresholds tailored to your business"
+msgstr "Customized thresholds tailored to your business"
+
+#: .\website\templates\index.html:504
+msgid "Monitoring isn’t optional — it’s essential."
+msgstr "Monitoring isn’t optional — it’s essential."
+
+#: .\website\templates\index.html:508
+msgid "Let us keep watch, so you can focus on what matters most."
+msgstr "Let us keep watch, so you can focus on what matters most."
+
+#: .\website\templates\index.html:524
+msgid ""
+"Reliable, Automated Backup Solutions — Because Data Loss Isn’t an Option"
+msgstr ""
+"Reliable, Automated Backup Solutions — Because Data Loss Isn’t an Option"
+
+#: .\website\templates\index.html:527
+msgid ""
+"At Obsera, we treat your data like mission-critical assets — because they "
+"are. That’s why we offer a complete range of automated, secure backup "
+"solutions tailored to your infrastructure and compliance needs."
+msgstr ""
+"At Obsera, we treat your data like mission-critical assets — because they "
+"are. That’s why we offer a complete range of automated, secure backup "
+"solutions tailored to your infrastructure and compliance needs."
+
+#: .\website\templates\index.html:533
+msgid "Our Solutions:"
+msgstr "Our Solutions:"
+
+#: .\website\templates\index.html:536
+msgid ""
+"✔️ LT Backup — Local and hybrid backups for servers, workstations, and NAS"
+msgstr ""
+"✔️ LT Backup — Local and hybrid backups for servers, workstations, and NAS"
+
+#: .\website\templates\index.html:539
+msgid ""
+"✔️ ProBackup 365 — Full protection of your Microsoft 365 data (Outlook, "
+"OneDrive, Teams, SharePoint)"
+msgstr ""
+"✔️ ProBackup 365 — Full protection of your Microsoft 365 data (Outlook, "
+"OneDrive, Teams, SharePoint)"
+
+#: .\website\templates\index.html:542
+msgid ""
+"✔️ Acronis Backup — Cloud-based backups with fast recovery and anti-"
+"ransomware defense"
+msgstr ""
+"✔️ Acronis Backup — Cloud-based backups with fast recovery and anti-"
+"ransomware defense"
+
+#: .\website\templates\index.html:545
+msgid ""
+"✔️ Custom setups — Tailored for physical servers, VMs, databases, or hybrid "
+"infrastructures"
+msgstr ""
+"✔️ Custom setups — Tailored for physical servers, VMs, databases, or hybrid "
+"infrastructures"
+
+#: .\website\templates\index.html:551
+msgid "Key Features:"
+msgstr "Key Features:"
+
+#: .\website\templates\index.html:553
+msgid "✔️ Scheduled, automated backups"
+msgstr "✔️ Scheduled, automated backups"
+
+#: .\website\templates\index.html:555
+msgid "✔️ Flexible retention (7, 30, or custom days)"
+msgstr "✔️ Flexible retention (7, 30, or custom days)"
+
+#: .\website\templates\index.html:557
+msgid "✔️ End-to-end encryption"
+msgstr "✔️ End-to-end encryption"
+
+#: .\website\templates\index.html:559
+msgid "✔️ Local, hybrid, or full cloud storage"
+msgstr "✔️ Local, hybrid, or full cloud storage"
+
+#: .\website\templates\index.html:562
+msgid "✔️ Detailed reporting and failure alerts"
+msgstr "✔️ Detailed reporting and failure alerts"
+
+#: .\website\templates\index.html:565
+msgid "✔️ Fast restore of files, emails, or entire systems"
+msgstr "✔️ Fast restore of files, emails, or entire systems"
+
+#: .\website\templates\index.html:568
+msgid "Why Obsera?"
+msgstr "Why Obsera?"
+
+#: .\website\templates\index.html:571
+msgid "✔️ Proactive monitoring of your backups"
+msgstr "✔️ Proactive monitoring of your backups"
+
+#: .\website\templates\index.html:573
+msgid "✔️ Business continuity planning"
+msgstr "✔️ Business continuity planning"
+
+#: .\website\templates\index.html:575
+msgid "✔️ Compliance-ready (GDPR, ISO, HIPAA, etc.)"
+msgstr "✔️ Compliance-ready (GDPR, ISO, HIPAA, etc.)"
+
+#: .\website\templates\index.html:578
+msgid "✔️ Fast support when disaster strikes"
+msgstr "✔️ Fast support when disaster strikes"
+
+#: .\website\templates\index.html:585
+msgid "It’s not a matter of if — but when."
+msgstr "It’s not a matter of if — but when."
+
+#: .\website\templates\index.html:589
+msgid "Be ready with Obsera. Your data will always be safe."
+msgstr "Be ready with Obsera. Your data will always be safe."
+
+#: .\website\templates\index.html:604
+msgid "Strategic IT Guidance for Smart Business Decisions"
+msgstr "Strategic IT Guidance for Smart Business Decisions"
+
+#: .\website\templates\index.html:608
+msgid "Consulting — Strategic IT Guidance for Smart Business Decisions"
+msgstr "Consulting — Strategic IT Guidance for Smart Business Decisions"
+
+#: .\website\templates\index.html:611
+msgid ""
+"At Obsera, we help businesses make informed, future-ready decisions about "
+"their IT environment. Whether you’re migrating to Microsoft 365, "
+"transitioning to Azure, improving your cybersecurity posture, or overhauling "
+"your infrastructure, our consulting services are designed to maximize "
+"impact, minimize risk, and drive growth."
+msgstr ""
+"At Obsera, we help businesses make informed, future-ready decisions about "
+"their IT environment. Whether you’re migrating to Microsoft 365, "
+"transitioning to Azure, improving your cybersecurity posture, or overhauling "
+"your infrastructure, our consulting services are designed to maximize "
+"impact, minimize risk, and drive growth."
+
+#: .\website\templates\index.html:616
+msgid "Our Consulting Services Include:"
+msgstr "Our Consulting Services Include:"
+
+#: .\website\templates\index.html:619
+msgid "✔️ Microsoft 365 and Azure migration projects"
+msgstr "✔️ Microsoft 365 and Azure migration projects"
+
+#: .\website\templates\index.html:622
+msgid "✔️ Security posture assessments and hardening plans"
+msgstr "✔️ Security posture assessments and hardening plans"
+
+#: .\website\templates\index.html:625
+msgid "✔️ License and cloud cost optimization"
+msgstr "✔️ License and cloud cost optimization"
+
+#: .\website\templates\index.html:632
+msgid "✔️ Business continuity and disaster recovery planning"
+msgstr "✔️ Business continuity and disaster recovery planning"
+
+#: .\website\templates\index.html:635
+msgid "✔️ Backup & EDR solution selection and deployment"
+msgstr "✔️ Backup & EDR solution selection and deployment"
+
+#: .\website\templates\index.html:638
+msgid "✔️ CISO advisory, ISO/GDPR compliance support"
+msgstr "✔️ CISO advisory, ISO/GDPR compliance support"
+
+#: .\website\templates\index.html:647
+msgid "🎯 Results-driven, actionable recommendations"
+msgstr "🎯 Results-driven, actionable recommendations"
+
+#: .\website\templates\index.html:650
+msgid "🧩 Customized strategies that fit your needs and budget"
+msgstr "🧩 Customized strategies that fit your needs and budget"
+
+#: .\website\templates\index.html:653
+msgid "🤝 Human, technical, and business-centric guidance"
+msgstr "🤝 Human, technical, and business-centric guidance"
+
+#: .\website\templates\index.html:656
+msgid "📈 Long-term vision to support sustainable growth"
+msgstr "📈 Long-term vision to support sustainable growth"
+
+#: .\website\templates\index.html:659
+msgid "💼 Experience with SMBs, legal firms, and regulated sectors"
+msgstr "💼 Experience with SMBs, legal firms, and regulated sectors"
+
+#: .\website\templates\index.html:666
+msgid "IT consulting isn’t just about advice."
+msgstr "IT consulting isn’t just about advice."
+
+#: .\website\templates\index.html:670
+msgid "It’s about clarity, confidence, and results."
+msgstr "It’s about clarity, confidence, and results."
+
+#: .\website\templates\index.html:674
+msgid "Obsera Informatique — Your trusted partner in digital transformation."
+msgstr "Obsera Informatique — Your trusted partner in digital transformation."
+
+#: .\website\templates\index.html:701
+msgid "experience_execution_excellence"
+msgstr "EXPERIENCE. EXECUTION. EXCELLENCE."
+
+#: .\website\templates\index.html:724
+msgid "trusted"
+msgstr "Your Trusted IT Partner"
+
+#: .\website\templates\index.html:727
+msgid "trusted_text"
+msgstr ""
+"At Obsera, we offer a wide range of IT solutions designed to elevate your "
+"business and help you stay ahead in an ever-evolving digital landscape. From "
+"strategic IT consulting to tailored cloud, security, and infrastructure "
+"services, we’re here to guide you through the complexities of modern "
+"technology. Our goal is to create lasting partnerships with businesses of "
+"all sizes by providing reliable, future-proof IT services and expert "
+"consultation."
+
+#: .\website\templates\index.html:745
+msgid "trusted_2"
+msgstr "Comprehensive IT Consulting"
+
+#: .\website\templates\index.html:748
+msgid "trusted_text_2"
+msgstr ""
+"As an IT consulting firm, we specialize in helping organizations streamline "
+"their IT operations, improve security, and embrace digital transformation. "
+"We provide end-to-end services that cover everything from infrastructure "
+"design to implementation and ongoing support. Whether you’re migrating to "
+"cloud services, optimizing your license management, or ensuring your data is "
+"secure, we’ve got you covered."
+
+#: .\website\templates\index.html:751
+msgid "trusted_text_3"
+msgstr ""
+"With expertise in Microsoft solutions, security systems like Bitdefender, "
+"cloud management with Azure and Microsoft 365, and proactive infrastructure "
+"monitoring, we deliver tailored solutions that maximize efficiency, "
+"security, and scalability."
+
+#: .\website\templates\index.html:772
+msgid "dedicated_team"
+msgstr "OUR DEDICATED TEAM"
+
+#: .\website\templates\index.html:773
+msgid "dedicated_team_1"
+msgstr "Here are our <br> expert team members"
+
+#: .\website\templates\index.html:776
+msgid "dedicated_team_2"
+msgstr ""
+"Our goal is to help our companies maintain or achieve best- in-class <br> "
+"positions in their respective industries and our team works."
+
+#: .\website\templates\index.html:804
+msgid "title_jp"
+msgstr "Project Manager & <br> System Administrator"
+
+#: .\website\templates\index.html:837
+msgid "title_nic"
+msgstr "Cloud Architect & <br> Licensing"
+
+#: .\website\templates\index.html:858
+msgid "contact_us"
+msgstr "CONTACT US"
+
+#: .\website\templates\index.html:860
+msgid "contact_desc"
+msgstr "Join Us To Get Free IT <br> Consultations"
+
+#: .\website\templates\index.html:890
+msgid "contact_head"
+msgstr "You Don't Hesitate To Contact <br> With Us, Now Say Hello......"
+
+#: .\website\templates\index.html:928
+#, fuzzy
+#| msgid "Services Interested In"
+msgid "Services intéressés"
+msgstr "Services auxquels vous êtes intéressé"
+
+#: .\website\templates\index.html:1004
+msgid "send_btn"
+msgstr "Send Message"
+
+#: .\website\templates\index.html:1045
+msgid "details_consulting"
+msgstr "Provide more details"
+
+#~ msgid "✔️ Infrastructure redesign and virtualization"
+#~ msgstr "✔️ Infrastructure redesign and virtualization"
+
+#~ msgid "wb_logo_banner"
+#~ msgstr "Logo-complet-V2_EN_Ban_Blanc_2.png"

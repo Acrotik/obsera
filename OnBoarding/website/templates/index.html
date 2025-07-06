@@ -142,36 +142,21 @@
                     margin: 0;
                   "
                 >
-                  {% get_available_languages as available_languages %} {% for lang_code, lang_name in available_languages %}
-                  <li>
-                    <a
-                      href="{% url 'set_language' lang_code %}"
-                      class="lang-btn"
-                      style="
-                        display: flex;
-                        align-items: center;
-                        padding: 8px 12px;
-                        background: #222;
-                        color: #fff;
-                        border-radius: 6px;
-                        text-decoration: none;
-                        font-weight: bold;
-                        transition: background-color 0.3s;
-                      "
-                    >
-                      <span class="flag" style="margin-right: 6px">
-                        {% if lang_code == 'en' %}
-                        <i class="fa-solid fa-flag-usa"></i>
-                        {% elif lang_code == 'fr' %}
-                        <i class="fa-brands fa-canadian-maple-leaf"></i>
-                        {% else %}
-                        <i class="fa-regular fa-flag"></i>
-                        {% endif %}
-                      </span>
-                      {{ lang_name }}
-                    </a>
-                  </li>
-                  {% endfor %}
+{% get_available_languages as available_languages %}
+{% for lang_code, lang_name in available_languages %}
+  <li>
+    <form action="{% url 'set_language' %}" method="post" style="display:inline;">
+      {% csrf_token %}
+      <input type="hidden" name="language" value="{{ lang_code }}">
+      <input type="hidden" name="next" value="{{ request.get_full_path }}">
+      <button type="submit" class="lang-btn" style="background:#222; color:#fff; border:none; padding:8px 12px; border-radius:6px; font-weight:bold; cursor:pointer;">
+        {{ lang_name }}
+      </button>
+    </form>
+  </li>
+{% endfor %}
+
+
                 </ul>
               </div>
             </div>

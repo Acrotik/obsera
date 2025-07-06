@@ -1,11 +1,17 @@
-from django.contrib import admin
+from django.conf.urls.i18n import i18n_patterns
 from django.urls import path, include
+from django.contrib import admin
 from website.views import index, success, deny
 
 urlpatterns = [
+    # any patterns you want *outside* the language prefix go here
     path('admin/', admin.site.urls),
-    path('', index, name='index'),  # root URL serves index.html
-    path('i18n/', include('django.conf.urls.i18n')),
-    path('success/', success, name='success'),  # Success page
-    path('deny/', deny, name='deny'),  # Deny page
+    path('', include('website.urls')),
+    path('success/', success, name='success'),
+    path('deny/', deny, name='deny'),
+
 ]
+
+urlpatterns += i18n_patterns(
+    path('', include('website.urls')),
+)
