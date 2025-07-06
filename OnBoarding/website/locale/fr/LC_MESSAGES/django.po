@@ -1,7 +1,11 @@
+# Copyright (C) 2025 Your Company
+# This file is distributed under the same license as the Your Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+# Translators:
+#
 msgid ""
 msgstr ""
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-05 14:40-0400\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
@@ -18,8 +22,6 @@ msgid "Monitoring"
 msgstr "Surveillance"
 
 #: .\website\forms.py:8
-#, fuzzy
-#| msgid "Cloud_Backup"
 msgid "Cloud Backup"
 msgstr "Sauvegarde <br> Cloud"
 
@@ -53,7 +55,7 @@ msgstr "Services auxquels vous êtes intéressé"
 
 #: .\website\forms.py:70
 msgid "Nombre d'employés"
-msgstr ""
+msgstr "Number of Employees"  # Fill in with the correct translation
 
 #: .\website\templates\index.html:6
 msgid "wb_title!"
@@ -101,9 +103,7 @@ msgstr "On protège ce qui vous fait avancer"
 
 #: .\website\templates\index.html:266
 msgid "main_head_3"
-msgstr ""
-"Expert en licences Microsoft, surveillance informatique et conseil pour "
-"garantir la conformité, la performance et l'efficacité des coûts."
+msgstr "Expert en licences Microsoft, surveillance informatique et conseil pour garantir la conformité, la performance et l'efficacité des coûts."
 
 #: .\website\templates\index.html:285
 msgid "what_we_do"
@@ -410,7 +410,6 @@ msgstr "Fournissez plus de détails"
 
 #~ msgid "Workstations and servers (Windows, macOS, Linux)"
 #~ msgstr "Postes de travail et serveurs (Windows, macOS, Linux)"
-
 #~ msgid "Microsoft 365 (Exchange Online, OneDrive, Teams)"
 #~ msgstr "Microsoft 365 (Exchange Online, OneDrive, Teams)"
 
@@ -422,7 +421,7 @@ msgstr "Fournissez plus de détails"
 
 #~ msgid "Next-gen antivirus and EDR (Endpoint Detection & Response)"
 #~ msgstr ""
-#~ "Antivirus de nouvelle génération et EDR (détection et réponse sur les "
+#~ "Antivirus de nouvelle génération et EDR (Détection et réponse sur les "
 #~ "terminaux)"
 
 #~ msgid "Continuous risk assessment and hardening recommendations"
