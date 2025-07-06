@@ -53,7 +53,7 @@ TEMPLATES = [
     },
 ]
 
-STATIC_ROOT = '/var/www/obsera/staticfiles/'
+STATIC_ROOT = '/root/obsera/OnBoarding/staticfiles'
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
