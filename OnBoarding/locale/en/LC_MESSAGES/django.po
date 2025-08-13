@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-06 11:09-0400\n"
+"POT-Creation-Date: 2025-08-12 22:49-0400\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
@@ -161,7 +161,7 @@ msgstr "Microsoft 365 Business & Enterprise Suites"
 msgid "Microsoft Teams, SharePoint, OneDrive and add-ons"
 msgstr "Microsoft Teams, SharePoint, OneDrive and add-ons"
 
-#: .\website\templates\index.html:324 .\website\templates\index.html:648
+#: .\website\templates\index.html:324 .\website\templates\index.html:647
 msgid "Why Choose Obsera:"
 msgstr "Why Choose Obsera:"
 
@@ -195,7 +195,7 @@ msgstr "Get the licenses you need — managed, monitored, and secured by Obsera.
 
 #: .\website\templates\index.html:353 .\website\templates\index.html:431
 #: .\website\templates\index.html:517 .\website\templates\index.html:598
-#: .\website\templates\index.html:684
+#: .\website\templates\index.html:683
 msgid "learn_more_btn"
 msgstr "Learn More"
 
@@ -535,84 +535,95 @@ msgstr "✔️ Security posture assessments and hardening plans"
 msgid "✔️ License and cloud cost optimization"
 msgstr "✔️ License and cloud cost optimization"
 
-#: .\website\templates\index.html:636
+#: .\website\templates\index.html:632
+msgid "✔️ Infrastructure redesign and virtualization"
+msgstr "✔️ Infrastructure redesign and virtualization"
+
+#: .\website\templates\index.html:635
 msgid "✔️ Business continuity and disaster recovery planning"
 msgstr "✔️ Business continuity and disaster recovery planning"
 
-#: .\website\templates\index.html:639
+#: .\website\templates\index.html:638
 msgid "✔️ Backup & EDR solution selection and deployment"
 msgstr "✔️ Backup & EDR solution selection and deployment"
 
-#: .\website\templates\index.html:642
+#: .\website\templates\index.html:641
 msgid "✔️ CISO advisory, ISO/GDPR compliance support"
 msgstr "✔️ CISO advisory, ISO/GDPR compliance support"
 
-#: .\website\templates\index.html:651
+#: .\website\templates\index.html:650
 msgid "🎯 Results-driven, actionable recommendations"
 msgstr "🎯 Results-driven, actionable recommendations"
 
-#: .\website\templates\index.html:654
+#: .\website\templates\index.html:653
 msgid "🧩 Customized strategies that fit your needs and budget"
 msgstr "🧩 Customized strategies that fit your needs and budget"
 
-#: .\website\templates\index.html:657
+#: .\website\templates\index.html:656
 msgid "🤝 Human, technical, and business-centric guidance"
 msgstr "🤝 Human, technical, and business-centric guidance"
 
-#: .\website\templates\index.html:660
+#: .\website\templates\index.html:659
 msgid "📈 Long-term vision to support sustainable growth"
 msgstr "📈 Long-term vision to support sustainable growth"
 
-#: .\website\templates\index.html:663
+#: .\website\templates\index.html:662
 msgid "💼 Experience with SMBs, legal firms, and regulated sectors"
 msgstr "💼 Experience with SMBs, legal firms, and regulated sectors"
 
-#: .\website\templates\index.html:670
+#: .\website\templates\index.html:669
 msgid "IT consulting isn’t just about advice."
 msgstr "IT consulting isn’t just about advice."
 
-#: .\website\templates\index.html:674
+#: .\website\templates\index.html:673
 msgid "It’s about clarity, confidence, and results."
 msgstr "It’s about clarity, confidence, and results."
 
-#: .\website\templates\index.html:678
+#: .\website\templates\index.html:677
 msgid "Obsera Informatique — Your trusted partner in digital transformation."
 msgstr "Obsera Informatique — Your trusted partner in digital transformation."
 
-#: .\website\templates\index.html:705
+#: .\website\templates\index.html:704
 msgid "experience_execution_excellence"
 msgstr "EXPERIENCE. EXECUTION. EXCELLENCE."
 
-#: .\website\templates\index.html:728
+#: .\website\templates\index.html:727
 msgid "trusted"
-msgstr "Your Trusted IT Partner"
+msgstr "Your Strategic IT Partner"
 
-#: .\website\templates\index.html:731
+#: .\website\templates\index.html:730
 msgid "trusted_text"
 msgstr ""
-"At Obsera, we offer a wide range of IT solutions designed to elevate your "
-"business and help you stay ahead in an ever-evolving digital landscape. From "
-"strategic IT consulting to tailored cloud, security, and infrastructure "
-"services, we’re here to guide you through the complexities of modern "
-"technology. Our goal is to create lasting partnerships with businesses of "
-"all sizes by providing reliable, future-proof IT services and expert "
-"consultation."
+"At Obsera, we provide end-to-end IT solutions engineered to enhance "
+"operational efficiency, scalability, and security across your organization. "
+"Our expertise spans strategic IT consulting, cloud architecture, "
+"cybersecurity, and enterprise infrastructure—enabling you to navigate "
+"complex digital transformations with confidence. Whether you're optimizing "
+"existing systems or deploying next-gen technologies, our focus is on "
+"delivering resilient, future-proof solutions that align with your business "
+"objectives. We partner with organizations of all sizes to drive sustainable "
+"growth through reliable IT strategy and execution."
 
-#: .\website\templates\index.html:749
+#: .\website\templates\index.html:748
 msgid "trusted_2"
-msgstr "Comprehensive IT Consulting"
+msgstr "Comprehensive IT Consulting Services"
 
-#: .\website\templates\index.html:752
+#: .\website\templates\index.html:751
 msgid "trusted_text_2"
 msgstr ""
-"As an IT consulting firm, we specialize in helping organizations streamline "
-"their IT operations, improve security, and embrace digital transformation. "
-"We provide end-to-end services that cover everything from infrastructure "
-"design to implementation and ongoing support. Whether you’re migrating to "
-"cloud services, optimizing your license management, or ensuring your data is "
-"secure, we’ve got you covered."
+"At Obsera, we specialize in delivering strategic IT consulting designed to "
+"streamline operations, strengthen cybersecurity posture, and accelerate "
+"digital transformation. Our end-to-end service model encompasses "
+"infrastructure architecture, deployment, and lifecycle support—ensuring "
+"alignment with your organization’s technical and business objectives.From "
+"cloud migration and license optimization to compliance-driven data "
+"protection, we offer targeted solutions built for performance and "
+"resilience. Our certified expertise spans Microsoft technologies (including "
+"Azure and Microsoft 365), advanced security platforms like Bitdefender, and "
+"proactive infrastructure monitoring—enabling us to deliver scalable, secure, "
+"and cost-effective IT ecosystems tailored to your needs."
 
-#: .\website\templates\index.html:755
+#: .\website\templates\index.html:754
 msgid "trusted_text_3"
 msgstr ""
 "With expertise in Microsoft solutions, security systems like Bitdefender, "
@@ -620,56 +631,59 @@ msgstr ""
 "monitoring, we deliver tailored solutions that maximize efficiency, "
 "security, and scalability."
 
-#: .\website\templates\index.html:776
+#: .\website\templates\index.html:775
 msgid "dedicated_team"
 msgstr "OUR DEDICATED TEAM"
 
-#: .\website\templates\index.html:777
+#: .\website\templates\index.html:776
 msgid "dedicated_team_1"
-msgstr "Here are our <br> expert team members"
+msgstr "Meet Our Expert Team"
 
-#: .\website\templates\index.html:780
+#: .\website\templates\index.html:779
 msgid "dedicated_team_2"
 msgstr ""
-"Our goal is to help our companies maintain or achieve best- in-class <br> "
-"positions in their respective industries and our team works."
+"At Obsera, our team of seasoned IT professionals is dedicated to helping "
+"organizations maintain — or achieve — best-in-class performance within their "
+"industries. With deep expertise across cloud infrastructure, cybersecurity, "
+"and enterprise IT strategy, our team works collaboratively to deliver "
+"measurable outcomes, drive innovation, and ensure long-term success for "
+"every client we support."
 
-#: .\website\templates\index.html:808
+#: .\website\templates\index.html:807
 msgid "title_jp"
 msgstr "Project Manager & <br> System Administrator"
 
-#: .\website\templates\index.html:841
+#: .\website\templates\index.html:838
 msgid "title_nic"
 msgstr "Cloud Architect & <br> Licensing"
 
-#: .\website\templates\index.html:862
+#: .\website\templates\index.html:859
 msgid "contact_us"
 msgstr "CONTACT US"
 
-#: .\website\templates\index.html:864
+#: .\website\templates\index.html:861
 msgid "contact_desc"
-msgstr "Join Us To Get Free IT <br> Consultations"
+msgstr "Get a Free IT Consultation"
 
-#: .\website\templates\index.html:894
+#: .\website\templates\index.html:891
 msgid "contact_head"
-msgstr "You Don't Hesitate To Contact <br> With Us, Now Say Hello......"
+msgstr ""
+"Join us to explore how our tailored IT solutions can support your business "
+"goals. Reach out today for a complimentary consultation with our experts."
 
-#: .\website\templates\index.html:932
+#: .\website\templates\index.html:929
 #, fuzzy
 #| msgid "Services Interested In"
 msgid "Services intéressés"
 msgstr "Services auxquels vous êtes intéressé"
 
-#: .\website\templates\index.html:1008
+#: .\website\templates\index.html:1005
 msgid "send_btn"
 msgstr "Send Message"
 
-#: .\website\templates\index.html:1049
+#: .\website\templates\index.html:1046
 msgid "details_consulting"
 msgstr "Provide more details"
-
-#~ msgid "✔️ Infrastructure redesign and virtualization"
-#~ msgstr "✔️ Infrastructure redesign and virtualization"
 
 #~ msgid "wb_logo_banner"
 #~ msgstr "Logo-complet-V2_EN_Ban_Blanc_2.png"

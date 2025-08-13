@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-06 11:09-0400\n"
+"POT-Creation-Date: 2025-08-12 22:49-0400\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
@@ -168,7 +168,7 @@ msgstr "Suites Microsoft 365 Business et Enterprise"
 msgid "Microsoft Teams, SharePoint, OneDrive and add-ons"
 msgstr "Microsoft Teams, SharePoint, OneDrive et modules complémentaires"
 
-#: .\website\templates\index.html:324 .\website\templates\index.html:648
+#: .\website\templates\index.html:324 .\website\templates\index.html:647
 msgid "Why Choose Obsera:"
 msgstr "Pourquoi choisir Obsera :"
 
@@ -204,7 +204,7 @@ msgstr ""
 
 #: .\website\templates\index.html:353 .\website\templates\index.html:431
 #: .\website\templates\index.html:517 .\website\templates\index.html:598
-#: .\website\templates\index.html:684
+#: .\website\templates\index.html:683
 msgid "learn_more_btn"
 msgstr "En savoir plus"
 
@@ -561,62 +561,66 @@ msgstr "✔️ Évaluations de la posture de sécurité et plans de renforcement
 msgid "✔️ License and cloud cost optimization"
 msgstr "✔️ Optimisation des licences et des coûts liés au cloud"
 
-#: .\website\templates\index.html:636
+#: .\website\templates\index.html:632
+msgid "✔️ Infrastructure redesign and virtualization"
+msgstr "✔️ Refonte de l’infrastructure et virtualisation"
+
+#: .\website\templates\index.html:635
 msgid "✔️ Business continuity and disaster recovery planning"
 msgstr "✔️ Plans de continuité d’activité et de reprise après sinistre"
 
-#: .\website\templates\index.html:639
+#: .\website\templates\index.html:638
 msgid "✔️ Backup & EDR solution selection and deployment"
 msgstr "✔️ Sélection et déploiement de solutions de sauvegarde et d’EDR"
 
-#: .\website\templates\index.html:642
+#: .\website\templates\index.html:641
 msgid "✔️ CISO advisory, ISO/GDPR compliance support"
 msgstr "✔️ Conseil CISO, accompagnement à la conformité ISO/GDPR"
 
-#: .\website\templates\index.html:651
+#: .\website\templates\index.html:650
 msgid "🎯 Results-driven, actionable recommendations"
 msgstr "🎯 Recommandations concrètes axées sur les résultats"
 
-#: .\website\templates\index.html:654
+#: .\website\templates\index.html:653
 msgid "🧩 Customized strategies that fit your needs and budget"
 msgstr "🧩 Stratégies personnalisées selon vos besoins et votre budget"
 
-#: .\website\templates\index.html:657
+#: .\website\templates\index.html:656
 msgid "🤝 Human, technical, and business-centric guidance"
 msgstr "🤝 Conseils centrés sur l’humain, la technique et les enjeux métier"
 
-#: .\website\templates\index.html:660
+#: .\website\templates\index.html:659
 msgid "📈 Long-term vision to support sustainable growth"
 msgstr "📈 Vision à long terme pour soutenir une croissance durable"
 
-#: .\website\templates\index.html:663
+#: .\website\templates\index.html:662
 msgid "💼 Experience with SMBs, legal firms, and regulated sectors"
 msgstr ""
 "💼 Expérience avec les PME, cabinets juridiques et secteurs réglementés"
 
-#: .\website\templates\index.html:670
+#: .\website\templates\index.html:669
 msgid "IT consulting isn’t just about advice."
 msgstr "Le conseil IT ne se limite pas à donner des avis."
 
-#: .\website\templates\index.html:674
+#: .\website\templates\index.html:673
 msgid "It’s about clarity, confidence, and results."
 msgstr "Il s'agit de clarté, de confiance et de résultats."
 
-#: .\website\templates\index.html:678
+#: .\website\templates\index.html:677
 msgid "Obsera Informatique — Your trusted partner in digital transformation."
 msgstr ""
 "Obsera Informatique — Votre partenaire de confiance pour la transformation "
 "numérique."
 
-#: .\website\templates\index.html:705
+#: .\website\templates\index.html:704
 msgid "experience_execution_excellence"
 msgstr "EXPÉRIENCE. EXÉCUTION. EXCELLENCE."
 
-#: .\website\templates\index.html:728
+#: .\website\templates\index.html:727
 msgid "trusted"
 msgstr "Votre Partenaire IT de Confiance"
 
-#: .\website\templates\index.html:731
+#: .\website\templates\index.html:730
 msgid "trusted_text"
 msgstr ""
 "Chez Obsera, nous offrons une large gamme de solutions informatiques conçues "
@@ -628,11 +632,11 @@ msgstr ""
 "toutes tailles en fournissant des services informatiques fiables, pérennes "
 "et une consultation experte."
 
-#: .\website\templates\index.html:749
+#: .\website\templates\index.html:748
 msgid "trusted_2"
 msgstr "Expertise IT Globale"
 
-#: .\website\templates\index.html:752
+#: .\website\templates\index.html:751
 msgid "trusted_text_2"
 msgstr ""
 "En tant que cabinet de conseil informatique, nous nous spécialisons dans "
@@ -643,7 +647,7 @@ msgstr ""
 "vers des services cloud, optimisiez la gestion de vos licences ou "
 "garantissiez la sécurité de vos données, nous avons tout ce qu'il vous faut."
 
-#: .\website\templates\index.html:755
+#: .\website\templates\index.html:754
 msgid "trusted_text_3"
 msgstr ""
 "Avec notre expertise en solutions Microsoft, systèmes de sécurité comme "
@@ -651,58 +655,55 @@ msgstr ""
 "proactive des infrastructures, nous fournissons des solutions sur mesure qui "
 "maximisent l'efficacité, la sécurité et la scalabilité."
 
-#: .\website\templates\index.html:776
+#: .\website\templates\index.html:775
 msgid "dedicated_team"
 msgstr "NOTRE ÉQUIPE DÉDIÉE"
 
-#: .\website\templates\index.html:777
+#: .\website\templates\index.html:776
 msgid "dedicated_team_1"
 msgstr "Voici nos <br> membres experts dans notre équipe"
 
-#: .\website\templates\index.html:780
+#: .\website\templates\index.html:779
 msgid "dedicated_team_2"
 msgstr ""
 "Notre objectif est d'aider nos entreprises à maintenir ou à atteindre des "
 "positions de premier plan <br> dans leurs industries respectives, et notre "
 "équipe y travaille activement."
 
-#: .\website\templates\index.html:808
+#: .\website\templates\index.html:807
 msgid "title_jp"
 msgstr "Chef de projet & <br> Administrateur Système"
 
-#: .\website\templates\index.html:841
+#: .\website\templates\index.html:838
 msgid "title_nic"
 msgstr "Architecte Cloud & <br> Gestion des licences"
 
-#: .\website\templates\index.html:862
+#: .\website\templates\index.html:859
 msgid "contact_us"
 msgstr "CONTACTEZ-NOUS"
 
-#: .\website\templates\index.html:864
+#: .\website\templates\index.html:861
 msgid "contact_desc"
 msgstr "Rejoignez-nous pour une consultation <br> informatique gratuite"
 
-#: .\website\templates\index.html:894
+#: .\website\templates\index.html:891
 msgid "contact_head"
 msgstr ""
 "N'hésitez pas à nous contacter <br> Dites-nous bonjour dès maintenant..."
 
-#: .\website\templates\index.html:932
+#: .\website\templates\index.html:929
 #, fuzzy
 #| msgid "Services Interested In"
 msgid "Services intéressés"
 msgstr "Services auxquels vous êtes intéressé"
 
-#: .\website\templates\index.html:1008
+#: .\website\templates\index.html:1005
 msgid "send_btn"
 msgstr "Envoyer"
 
-#: .\website\templates\index.html:1049
+#: .\website\templates\index.html:1046
 msgid "details_consulting"
 msgstr "Fournissez plus de détails"
-
-#~ msgid "✔️ Infrastructure redesign and virtualization"
-#~ msgstr "✔️ Refonte de l’infrastructure et virtualisation"
 
 #~ msgid "wb_logo_banner"
 #~ msgstr "Logo-complet-V2_FR_Ban_Blanc_2.png"
