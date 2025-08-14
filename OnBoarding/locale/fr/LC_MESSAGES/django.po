@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 11:21-0400\n"
+"POT-Creation-Date: 2025-08-14 11:28-0400\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
@@ -25,7 +25,7 @@ msgstr "Surveillance"
 
 #: .\website\forms.py:8
 msgid "Cloud Backup"
-msgstr "Sauvegarde <br> Cloud"
+msgstr "Sauvegarde Cloud"
 
 #: .\website\forms.py:9 .\website\templates\index.html:292
 msgid "Consulting"
@@ -77,6 +77,10 @@ msgstr "Obsera | Supervision Informatique & Licenses!"
 #: .\website\templates\index.html:81
 msgid "business_hour"
 msgstr "Heures d'ouvertures"
+
+#: .\website\templates\index.html:81
+msgid "emergency"
+msgstr "Urgence"
 
 #: .\website\templates\index.html:191
 msgid "home"
@@ -702,10 +706,8 @@ msgstr ""
 "N'hésitez pas à nous contacter <br> Dites-nous bonjour dès maintenant..."
 
 #: .\website\templates\index.html:932
-#, fuzzy
-#| msgid "Services Interested In"
-msgid "Services intéressés"
-msgstr "Services auxquels vous êtes intéressé"
+msgid "Services intéressés form"
+msgstr "Services Intéressés"
 
 #: .\website\templates\index.html:1008
 msgid "send_btn"
@@ -714,6 +716,11 @@ msgstr "Envoyer"
 #: .\website\templates\index.html:1049
 msgid "details_consulting"
 msgstr "Fournissez plus de détails"
+
+#, fuzzy
+#~| msgid "Services Interested In"
+#~ msgid "Services intéressés"
+#~ msgstr "Services auxquels vous êtes intéressé"
 
 #~ msgid "wb_logo_banner"
 #~ msgstr "Logo-complet-V2_FR_Ban_Blanc_2.png"

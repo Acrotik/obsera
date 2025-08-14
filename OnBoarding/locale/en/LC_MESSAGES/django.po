@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-14 11:21-0400\n"
+"POT-Creation-Date: 2025-08-14 11:28-0400\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
@@ -51,7 +51,7 @@ msgstr "Services auxquels vous êtes intéressé"
 
 #: .\website\forms.py:70
 msgid "Nombre d'employés"
-msgstr ""
+msgstr "Number of employees"
 
 #: .\website\models.py:6
 #, fuzzy
@@ -70,6 +70,10 @@ msgstr "Obsera | Licensing & Consulting!"
 #: .\website\templates\index.html:81
 msgid "business_hour"
 msgstr "Open Hours"
+
+#: .\website\templates\index.html:81
+msgid "emergency"
+msgstr "Emergency"
 
 #: .\website\templates\index.html:191
 msgid "home"
@@ -672,10 +676,8 @@ msgstr ""
 "goals. Reach out today for a complimentary consultation with our experts."
 
 #: .\website\templates\index.html:932
-#, fuzzy
-#| msgid "Services Interested In"
-msgid "Services intéressés"
-msgstr "Services auxquels vous êtes intéressé"
+msgid "Services intéressés form"
+msgstr "Required Services"
 
 #: .\website\templates\index.html:1008
 msgid "send_btn"
@@ -684,6 +686,11 @@ msgstr "Send Message"
 #: .\website\templates\index.html:1049
 msgid "details_consulting"
 msgstr "Provide more details"
+
+#, fuzzy
+#~| msgid "Services Interested In"
+#~ msgid "Services intéressés"
+#~ msgstr "Services auxquels vous êtes intéressé"
 
 #~ msgid "wb_logo_banner"
 #~ msgstr "Logo-complet-V2_EN_Ban_Blanc_2.png"
