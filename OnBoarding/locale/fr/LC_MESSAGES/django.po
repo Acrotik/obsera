@@ -33,7 +33,7 @@ msgstr "Consultation"
 
 #: .\website\forms.py:17
 msgid "Name"
-msgstr "Nom Et Prenom"
+msgstr "Nom et prénom"
 
 #: .\website\forms.py:24
 msgid "Email"
@@ -41,7 +41,7 @@ msgstr "Courriel"
 
 #: .\website\forms.py:32
 msgid "Phone"
-msgstr "Telephone"
+msgstr "Téléphone"
 
 #: .\website\forms.py:40
 msgid "Company"
@@ -57,7 +57,7 @@ msgstr "Services auxquels vous êtes intéressé"
 
 #: .\website\forms.py:70
 msgid "Nombre d'employés"
-msgstr "Number of Employees"
+msgstr "Nombre d'employés"
 
 #: .\website\models.py:6
 #, fuzzy
@@ -88,7 +88,7 @@ msgstr "Services"
 
 #: .\website\templates\index.html:193
 msgid "about"
-msgstr "A propos"
+msgstr "À propos"
 
 #: .\website\templates\index.html:194
 msgid "team"
@@ -126,7 +126,7 @@ msgstr "Ce que nous faisons réellement"
 
 #: .\website\templates\index.html:286
 msgid "Cloud_Backup"
-msgstr "Sauvegarde <br> Cloud"
+msgstr "Sauvegarde Cloud"
 
 #: .\website\templates\index.html:299
 msgid "Official Licensing Provider for Microsoft & Security Solutions"
@@ -139,10 +139,9 @@ msgid ""
 "the licensing process and ensure you're always compliant, up to date, and "
 "optimized for your budget."
 msgstr ""
-"Obsera Informatique est votre partenaire de confiance pour tous vos besoins "
-"en licences Microsoft. Que vous soyez une petite entreprise ou une grande "
-"organisation, nous simplifions le processus de licence et veillons à ce que "
-"vous soyez toujours conforme, à jour et optimisé selon votre budget."
+"Chez Obsera, nous proposons une large gamme de solutions informatiques conçues pour propulser votre entreprise et vous aider à garder une longueur d’avance dans un environnement numérique en constante évolution."
+"De la consultation stratégique aux services cloud, de sécurité et d’infrastructure sur mesure, nous vous accompagnons à chaque étape pour naviguer dans les complexités de la technologie moderne."
+"Notre mission est de bâtir des partenariats durables avec des entreprises de toutes tailles, en offrant des services fiables, pérennes et une expertise informatique de haut niveau."
 
 #: .\website\templates\index.html:306
 msgid "Our Licensing Services Cover:"
@@ -639,13 +638,11 @@ msgstr "Expertise IT Globale"
 #: .\website\templates\index.html:751
 msgid "trusted_text_2"
 msgstr ""
-"En tant que cabinet de conseil informatique, nous nous spécialisons dans "
-"l'aide aux organisations pour rationaliser leurs opérations informatiques, "
-"améliorer la sécurité et adopter la transformation numérique. Nous "
-"fournissons des services complets qui couvrent tout, de la conception de "
-"l'infrastructure à la mise en œuvre et au support continu. Que vous migriez "
-"vers des services cloud, optimisiez la gestion de vos licences ou "
-"garantissiez la sécurité de vos données, nous avons tout ce qu'il vous faut."
+"En tant que cabinet de conseil en technologies de l’information, nous aidons les organisations à rationaliser leurs opérations, renforcer leur sécurité et réussir leur transformation numérique."
+"Nous proposons des services complets couvrant toutes les étapes : de la conception de l’infrastructure à sa mise en œuvre, jusqu’au support continu."
+"Que vous envisagiez une migration vers le cloud, l’optimisation de la gestion de vos licences ou la sécurisation de vos données, nous disposons des solutions adaptées à vos besoins."
+
+"Grâce à notre expertise des solutions Microsoft, des systèmes de sécurité tels que Bitdefender, de la gestion cloud avec Azure et Microsoft 365, ainsi que de la surveillance proactive des infrastructures, nous proposons des solutions sur mesure visant à maximiser l’efficacité, renforcer la sécurité et assurer la capacité d’adaptation de vos environnements informatiques."
 
 #: .\website\templates\index.html:754
 msgid "trusted_text_3"
